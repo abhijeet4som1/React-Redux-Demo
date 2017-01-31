@@ -1,0 +1,14 @@
+.task-cont{
+  margin-top:50px !important;
+  width:70%;
+  margin:auto;
+  height:200px;
+  border:1px solid;
+  position: relative;
+  padding: 5px;
+}
+.task-add-cont{
+  position: absolute;
+  bottom: 5px;
+  right:5px;
+}

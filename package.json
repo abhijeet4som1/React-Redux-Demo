@@ -1,0 +1,33 @@
+{
+  "name": "simple-react",
+  "version": "1.0.0",
+  "description": "React with redux",
+  "main": "index.jsx",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "ReactJS"
+  ],
+  "author": "Abhijeet",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-plugin-react-transform": "^2.0.2",
+    "express": "^4.14.0",
+    "immutable": "^3.8.1",
+    "react-redux": "^5.0.2",
+    "react-transform-hmr": "^1.0.4",
+    "redux": "^3.6.0",
+    "webpack": "^1.14.0",
+    "webpack-dev-middleware": "^1.9.0",
+    "webpack-hot-middleware": "^2.15.0"
+  },
+  "dependencies": {
+    "css-loader": "^0.26.1",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "style-loader": "^0.13.1"
+  }
+}
