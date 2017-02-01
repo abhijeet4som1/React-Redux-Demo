@@ -7,22 +7,13 @@ class Landing extends React.Component{
     super(props);
   }
 
-  componentWillMount(){
-    console.log("component will mount method");
-  }
-
   render(){
-    console.log("render method");
     return(
       <div>
         <Header/>
         <TaskContainer/>
       </div>
     )
-  }
-
-  componentDidMount(){
-    console.log("componet did mount method");
   }
 
 }

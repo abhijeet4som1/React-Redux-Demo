@@ -10,10 +10,7 @@ export const initialState=fromJS({
 //actions available on this component
 export const ADD_TASK:string='ADD_TASK';
 const addTask = (model:TaskModel)=>{
-  console.log("action:",model);
-  return (dispatch,getState) =>{
-      return dispatch({type:ADD_TASK,task:model});
-  }
+    return {type:ADD_TASK,task:model};
 }
 
 
