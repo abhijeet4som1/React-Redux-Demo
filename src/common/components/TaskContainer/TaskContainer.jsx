@@ -4,6 +4,7 @@ import {bindActionCreators} from 'redux';
 import {TaskModel} from './TaskHelper';
 import TaskAdder from './TaskAdder';
 import * as TaskAction from '../../actions/TaskAction';
+import * as Util from '../../utilities/Utilities';
 
 
 require('./tasks.css');
@@ -23,7 +24,7 @@ class TaskContainer extends React.Component{
     let content=[];
     this.props.tasks.forEach((task,index)=>{
       content.push(
-        <tr key={'task-'+index}><td>{task.name}</td><td>{String(task.createdOn)}</td></tr>
+        <tr key={'task-'+index}><td>{task.name}</td><td>{Util.formatDate(task.createdOn,'Do MMM YYYY')}</td></tr>
       )
     });
     return(
