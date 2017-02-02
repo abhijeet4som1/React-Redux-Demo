@@ -5,6 +5,7 @@ import {TaskModel} from './TaskHelper';
 import TaskAdder from './TaskAdder';
 import * as TaskAction from '../../actions/TaskAction';
 import * as Util from '../../utilities/Utilities';
+import Loading from '../Loading/Loading';
 
 
 require('./tasks.css');
@@ -21,6 +22,7 @@ class TaskContainer extends React.Component{
   }
 
   render(){
+    console.log("task container:",this.props);
     let content=[];
     this.props.tasks.forEach((task,index)=>{
       content.push(
@@ -46,6 +48,7 @@ class TaskContainer extends React.Component{
             }
           })()}
           <TaskAdder addTaskName={this.addTaskName}/>
+          {this.props.isLoading && <Loading/>}
       </div>
     );
   }
